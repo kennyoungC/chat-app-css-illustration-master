@@ -1,51 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+    <title>Frontend Mentor | [CHAT APP ILLUSTRATION]</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="app-box">
+        <div class="app-header">
+          <div class="img-box">
+            <ion-icon
+              class="header-icon"
+              name="chevron-back-outline"
+            ></ion-icon>
+            <img src="images/avatar.jpg" alt="" />
+            <p class="name">Samuel Green</p>
+            <p class="name-tag">Available to Walk</p>
+          </div>
+          <div></div>
+          <ion-icon
+            class="header-icon"
+            name="ellipsis-vertical-outline"
+          ></ion-icon>
+        </div>
+        <div class="chat-start">
+          <p class="chat-start-text">
+            That sounds great. I’d be <br />
+            happy with that.
+          </p>
+        </div>
+        <div class="chat-start">
+          <p class="chat-start-text">
+            Could you send over some <br />
+            pictures of your dog, please?
+          </p>
+        </div>
+        <div class="chat-end">
+          <div class="dog-img-box">
+            <img src="images/dog-image-1.jpg" alt="photo of a dog" />
+            <img src="images/dog-image-2.jpg" alt="photo of a dog" />
+            <img src="images/dog-image-3.jpg" alt="photo of a dog" />
+          </div>
+          <p class="chat-end-text">
+            Here are a few pictures. She’s <br />
+            a happy girl!
+          </p>
+          <p class="chat-end-text">Can you make it?</p>
+        </div>
+        <div class="chat-start">
+          <p class="chat-start-text">
+            She looks so happy! The time <br />
+            we discussed works. How <br />
+            long shall I take her out for?
+          </p>
+        </div>
+        <div class="pricing">
+          <ion-icon name="ellipse-outline"></ion-icon>
+          <p>30 minute walk<strong>$29</strong></p>
+          <p>1 hour walk<strong>$49</strong></p>
+        </div>
+        <div class="chat-end">
+          <ion-icon
+            class="forward-icon"
+            name="chevron-forward-outline"
+          ></ion-icon>
+        </div>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Samuel Green
-  Available to Walk
-
-  That sounds great. I’d be happy with that.
-
-  Could you send over some pictures of your dog, please?
-
-  Here are a few pictures. She’s a happy girl!
-
-  Can you make it?
-
-  She looks so happy! The time we discussed works. How long shall I take her out for?
-
-  30 minute walk
-  $29
-
-  1 hour walk
-  $49
-
-  Type a message…
-
-  Simple booking
-
-  Stay in touch with our dog walkers through the chat interface. This makes it easy to 
-  discuss arrangements and make bookings. Once the walk has been completed you can rate 
-  your walker and book again all through the chat.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        $49 Type a message… Simple booking Stay in touch with our dog walkers
+        through the chat interface. This makes it easy to discuss arrangements
+        and make bookings. Once the walk has been completed you can rate your
+        walker and book again all through the chat.
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </footer>
+  </body>
 </html>

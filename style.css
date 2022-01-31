@@ -5,24 +5,65 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+.app-box {
+  width: 600px;
+}
 .app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(
+    to right,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  padding: 32px 12px 18px 12px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 11px;
+  border-bottom-left-radius: 11px;
 }
 .img-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.img-box img {
+  width: 48px;
+  border-radius: 50%;
 }
 .header-icon {
-  width: 24px;
+  width: 32px;
+  color: hsl(0, 0%, 100%);
 }
 .name {
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: capitalize;
 }
 .name-tag {
+  color: hsl(276, 100%, 81%);
+  font-size: 16px;
 }
 .chat-start {
+  display: flex;
+  justify-content: flex-start;
 }
 .chat-start-text {
 }
 .chat-end {
+  display: flex;
+  justify-content: flex-end;
 }
 .dog-img-box {
+  display: flex;
+  gap: 12px;
+}
+.dog-img-box img {
+  width: 48px;
+  height: 48px;
+  border-radius: 7px;
 }
 .chat-end-text {
 }

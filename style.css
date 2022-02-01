@@ -1,24 +1,62 @@
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: 96px;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+body {
+  width: 1440px;
+  height: 100vh;
+  margin: 0 auto;
+  overflow-x: hidden;
+  background-color: hsl(270, 20%, 96%);
+}
 .container {
   width: 900px;
-  margin: 0 auto;
+  margin-top: 280px;
+  margin-left: 558px;
+  margin-right: auto;
   display: flex;
-  gap: 96px;
+  gap: 120px;
   align-items: center;
+  justify-content: center;
+  /* margin-right: 5px; */
+  /* position: relative; */
 }
+/* .all-content {
+  margin: 200px auto;
+} */
 .app-box-h {
-  /* padding: 18px 12px 18px 24px; */
-  /* background-color: rgb(136, 38, 38); */
-  position: relative;
-  border-radius: 11px;
+  margin-bottom: 16px;
+  padding: 24px;
+  background-color: hsl(0, 0%, 100%);
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
-.app-box-h::before {
+
+body::before {
+  margin: 0 auto;
+  content: "";
+  display: block;
+  width: 720px;
+  height: 1147px;
+  position: absolute;
+  top: 0;
+  left: -50px;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  z-index: -5;
+}
+/* .container::before {
   content: "top";
   display: block;
   width: 550px;
@@ -34,10 +72,11 @@
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
   z-index: -5;
-}
+} */
 .app-box {
+  /* margin-top: 100px; */
   z-index: 2;
-  width: 400px;
+  width: 350px;
   background-color: hsl(270, 20%, 96%);
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
@@ -59,6 +98,20 @@
   border-top-right-radius: 40px;
   border-bottom-right-radius: 11px;
   border-bottom-left-radius: 11px;
+  position: relative;
+}
+.app-header::before {
+  content: "";
+  display: block;
+  padding: 25px 96px;
+  background-color: hsl(0, 0%, 100%);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  position: absolute;
+  top: -25px;
+  right: 70px;
 }
 .img-box {
   display: flex;
@@ -193,4 +246,16 @@ h1 {
   font-size: 16px;
   color: hsl(270, 7%, 64%);
   line-height: 1.5;
+}
+.attribution a:link,
+.attribution a:visited {
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+.attribution a:hover,
+.attribution a:active {
+  text-decoration: underline;
+  font-weight: bolder;
 }

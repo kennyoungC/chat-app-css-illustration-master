@@ -233,7 +233,7 @@ body::before {
   background-color: hsl(271, 36%, 24%);
   border-radius: 20px;
   position: absolute;
-  top: 4px;
+  top: 2px;
   right: 22px;
   /* transform: translate(100, 10); */
 }
@@ -258,4 +258,34 @@ h1 {
 .attribution a:active {
   text-decoration: underline;
   font-weight: bolder;
+}
+@media (max-width: 32em) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-top: 140px;
+  }
+  .header {
+    text-align: center;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  .header-text {
+    font-size: 20px;
+  }
+  body {
+    width: 420px;
+    margin: 0 auto;
+  }
+  body::before {
+    height: 955px;
+    width: 310px;
+    top: -150px;
+  }
 }

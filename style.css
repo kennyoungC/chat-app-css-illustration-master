@@ -110,7 +110,7 @@ body::before {
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
   position: absolute;
-  top: -25px;
+  top: -24px;
   right: 70px;
 }
 .img-box {
